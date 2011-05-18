@@ -26,13 +26,11 @@
 
 @implementation ColllumnsAppDelegate
 
-@synthesize window, shadow;
-
+@synthesize shadow, window;
 
 - (void)dealloc {
-  
-    [window release];
-    [super dealloc];
+  [window release];
+  [super dealloc];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
@@ -51,13 +49,16 @@
 	[map from:@"tt://feedlisting" toViewController:[FeedListingController class]];
 	[map from:@"tt://feedarticle/(initWithName:)" toViewController:[FeedArticleController class]];
 	
-	navigator.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	
+  navigator.window = window;
+  
 	[navigator openURLAction:[TTURLAction actionWithURLPath:@"tt://feedlisting"]];
 	
 	shadow = [[UIImageView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] applicationFrame].origin.y + 44, 320, 10)];
 	shadow.image = [UIImage imageNamed:@"topshadow.png"];
 	[navigator.window addSubview:shadow];
+  [shadow release];
 	
 	[navigator.window makeKeyAndVisible];
 	

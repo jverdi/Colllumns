@@ -22,12 +22,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ColllumnsAppDelegate : NSObject <UIApplicationDelegate, TTNavigatorDelegate> {
-  UIWindow* window;
   UIImageView* shadow;
+  UIWindow* window;
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow* window;
 @property (nonatomic, retain) UIImageView* shadow;
+@property (nonatomic, retain) UIWindow* window;
 
 @end
 

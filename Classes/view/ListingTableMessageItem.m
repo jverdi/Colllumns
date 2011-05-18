@@ -38,7 +38,7 @@
 }
 
 - (void)cellTapped {
-  NSLog(@"test");
+
 }
 
 + (id)itemWithTitle:(NSString*)title text:(NSString*)text

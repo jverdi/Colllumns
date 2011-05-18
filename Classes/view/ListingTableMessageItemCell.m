@@ -113,8 +113,6 @@ static const NSInteger  kColllumnsAuthorTitleSep	= 8;
     expectedAuthorSize =
       [_titleLabel.text sizeWithFont:_titleLabel.font constrainedToSize:CGSizeMake(180, 20)];
     
-    NSLog(@"%f", left);
-    
     _titleLabel.frame = CGRectMake(left, top, expectedAuthorSize.width, _titleLabel.font.ttLineHeight);
     
     top += _titleLabel.height;
