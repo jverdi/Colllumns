@@ -16,23 +16,21 @@
 //  the License.
 //
 
-// MODIFIED by Keith Lazuka (klazuka@gmail.com) to remove the dependency on
-// GTMGarbageCollection.h, which is not available on the iPhone.
-
 #import "GTMNSString+URLArguments.h"
+#import "GTMGarbageCollection.h"
 
 @implementation NSString (GTMNSStringURLArgumentsAdditions)
 
 - (NSString*)gtm_stringByEscapingForURLArgument {
   // Encode all the reserved characters, per RFC 3986
   // (<http://www.ietf.org/rfc/rfc3986.txt>)
-  NSString *escaped = 
-    (NSString*)CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
-                                                       (CFStringRef)self,
-                                                       NULL,
-                                                       (CFStringRef)@"!*'();:@&=+$,/?%#[]",
-                                                       kCFStringEncodingUTF8);
-  return [escaped autorelease];
+  CFStringRef escaped = 
+    CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
+                                            (CFStringRef)self,
+                                            NULL,
+                                            (CFStringRef)@"!*'();:@&=+$,/?%#[]",
+                                            kCFStringEncodingUTF8);
+  return GTMCFAutorelease(escaped);
 }
 
 - (NSString*)gtm_stringByUnescapingFromURLArgument {
