@@ -3,14 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133134F3138D80CC00E04700 /* GTMMethodCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 133134F0138D80CC00E04700 /* GTMMethodCheck.m */; };
+		133134F4138D80CC00E04700 /* GTMObjC2Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 133134F2138D80CC00E04700 /* GTMObjC2Runtime.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		320AF8492C47A4D819F7C451 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320AF8492C47A4D819F7C450 /* QuartzCore.framework */; };
 		7F5A53B1128AF7A6005121FD /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7F5A539E128AF7A6005121FD /* Three20.bundle */; };
 		7F5A543C128AF7AB005121FD /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5A53DB128AF7A6005121FD /* libThree20.a */; };
 		7F5A543D128AF7AB005121FD /* libThree20Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5A541B128AF7A6005121FD /* libThree20Core.a */; };
@@ -208,11 +211,17 @@
 
 /* Begin PBXFileReference section */
 		1331347C138D771700E04700 /* Colllumns-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Colllumns-Prefix.pch"; sourceTree = "<group>"; };
+		133134EE138D80CC00E04700 /* GTMGarbageCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMGarbageCollection.h; sourceTree = "<group>"; };
+		133134EF138D80CC00E04700 /* GTMMethodCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMMethodCheck.h; sourceTree = "<group>"; };
+		133134F0138D80CC00E04700 /* GTMMethodCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMMethodCheck.m; sourceTree = "<group>"; };
+		133134F1138D80CC00E04700 /* GTMObjC2Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMObjC2Runtime.h; sourceTree = "<group>"; };
+		133134F2138D80CC00E04700 /* GTMObjC2Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMObjC2Runtime.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* colllumns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = colllumns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		320AF8492C47A4D819F7C450 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7F5A539B128AF7A6005121FD /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = Classes/support/three20/src/Three20/Three20.xcodeproj; sourceTree = "<group>"; };
 		7F5A539E128AF7A6005121FD /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = Classes/support/three20/src/Three20.bundle; sourceTree = "<group>"; };
 		7F5A539F128AF7A6005121FD /* Three20Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Core.xcodeproj; path = Classes/support/three20/src/Three20Core/Three20Core.xcodeproj; sourceTree = "<group>"; };
@@ -293,6 +302,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320AF8492C47A4D819F7C451 /* QuartzCore.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -373,6 +383,14 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7F5A53AB128AF7A6005121FD /* Three20UICommon.xcodeproj */,
+				7F5A539B128AF7A6005121FD /* Three20.xcodeproj */,
+				7F5A53AE128AF7A6005121FD /* Three20UINavigator.xcodeproj */,
+				7F5A539F128AF7A6005121FD /* Three20Core.xcodeproj */,
+				7F5A53A8128AF7A6005121FD /* Three20UI.xcodeproj */,
+				320AF8492C47A4D819F7C450 /* QuartzCore.framework */,
+				7F5A53A2128AF7A6005121FD /* Three20Network.xcodeproj */,
+				7F5A53A5128AF7A6005121FD /* Three20Style.xcodeproj */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
@@ -448,12 +466,17 @@
 			isa = PBXGroup;
 			children = (
 				7F5A54A8128AFA3F005121FD /* GTMDefines.h */,
+				133134EE138D80CC00E04700 /* GTMGarbageCollection.h */,
+				133134EF138D80CC00E04700 /* GTMMethodCheck.h */,
+				133134F0138D80CC00E04700 /* GTMMethodCheck.m */,
 				7F5A54A9128AFA3F005121FD /* GTMNSDictionary+URLArguments.h */,
 				7F5A54AA128AFA3F005121FD /* GTMNSDictionary+URLArguments.m */,
 				7FAEA3071293A3520089E44C /* GTMNSString+HTML.h */,
 				7FAEA3081293A3520089E44C /* GTMNSString+HTML.m */,
 				7F5A54AB128AFA3F005121FD /* GTMNSString+URLArguments.h */,
 				7F5A54AC128AFA3F005121FD /* GTMNSString+URLArguments.m */,
+				133134F1138D80CC00E04700 /* GTMObjC2Runtime.h */,
+				133134F2138D80CC00E04700 /* GTMObjC2Runtime.m */,
 			);
 			name = GTM;
 			path = Classes/support/GTM;
@@ -607,7 +630,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Colllumns" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -807,6 +830,8 @@
 				7FB105F2129098B900715486 /* ListingTableMessageItemCell.m in Sources */,
 				7FAEA3021293A1CD0089E44C /* NSString+HTML.m in Sources */,
 				7FAEA3091293A3520089E44C /* GTMNSString+HTML.m in Sources */,
+				133134F3138D80CC00E04700 /* GTMMethodCheck.m in Sources */,
+				133134F4138D80CC00E04700 /* GTMObjC2Runtime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -862,24 +887,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Colllumns-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/../three20",
+					"$(BUILT_PRODUCTS_DIR)/../../three20",
 					"\"$(SRCROOT)/Classes/support\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Products/three20\"",
 				);
 				INFOPLIST_FILE = "colllumns-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Products/Debug-iphoneos\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Products/Debug-iphonesimulator\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Products/Release-iphoneos\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Products/Release-iphonesimulator\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Three20.build/Release-iphoneos/Three20.build/Objects-normal/armv6\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Three20.build/Release-iphoneos/Three20.build/Objects-normal/armv7\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Three20Network.build/Release-iphoneos/Three20Network.build/Objects-normal/armv6\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Three20Network.build/Release-iphoneos/Three20Network.build/Objects-normal/armv7\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Three20UI.build/Release-iphoneos/Three20UI.build/Objects-normal/armv6\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Three20UI.build/Release-iphoneos/Three20UI.build/Objects-normal/armv7\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = colllumns;
 				SDKROOT = iphoneos;
 			};
@@ -894,24 +909,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Colllumns-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/../three20",
+					"$(BUILT_PRODUCTS_DIR)/../../three20",
 					"\"$(SRCROOT)/Classes/support\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Products/three20\"",
 				);
 				INFOPLIST_FILE = "colllumns-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Products/Debug-iphoneos\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Products/Debug-iphonesimulator\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Products/Release-iphoneos\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Products/Release-iphonesimulator\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Three20.build/Release-iphoneos/Three20.build/Objects-normal/armv6\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Three20.build/Release-iphoneos/Three20.build/Objects-normal/armv7\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Three20Network.build/Release-iphoneos/Three20Network.build/Objects-normal/armv6\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Three20Network.build/Release-iphoneos/Three20Network.build/Objects-normal/armv7\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Three20UI.build/Release-iphoneos/Three20UI.build/Objects-normal/armv6\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Three20UI.build/Release-iphoneos/Three20UI.build/Objects-normal/armv7\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = colllumns;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -929,10 +934,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/Classes/support\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Products/three20\"",
-				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "colllumns-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
@@ -954,24 +956,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Colllumns-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/../three20",
+					"$(BUILT_PRODUCTS_DIR)/../../three20",
 					"\"$(SRCROOT)/Classes/support\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Products/three20\"",
 				);
 				INFOPLIST_FILE = "colllumns-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Products/Debug-iphoneos\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Products/Debug-iphonesimulator\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Products/Release-iphoneos\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Products/Release-iphonesimulator\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Three20.build/Release-iphoneos/Three20.build/Objects-normal/armv6\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Three20.build/Release-iphoneos/Three20.build/Objects-normal/armv7\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Three20Network.build/Release-iphoneos/Three20Network.build/Objects-normal/armv6\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Three20Network.build/Release-iphoneos/Three20Network.build/Objects-normal/armv7\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Three20UI.build/Release-iphoneos/Three20UI.build/Objects-normal/armv6\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Three20UI.build/Release-iphoneos/Three20UI.build/Objects-normal/armv7\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = colllumns;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -988,10 +979,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/Classes/support\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Products/three20\"",
-				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "colllumns-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1013,10 +1001,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/Classes/support\"",
-					"\"$(SRCROOT)/Classes/support/three20/Build/Products/three20\"",
-				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "colllumns-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
