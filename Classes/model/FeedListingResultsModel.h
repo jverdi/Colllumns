@@ -22,7 +22,7 @@
 #import <Foundation/Foundation.h>
 #import "FeedListingJSONResponse.h"
 
-@interface FeedListingResultsModel : TTURLRequestModel <TTModel> {
+@interface FeedListingResultsModel : TTURLRequestModel {
 
   FeedListingJSONResponse *responseProcessor;
 }
